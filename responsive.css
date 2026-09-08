@@ -1,0 +1,1066 @@
+/* =========================================================
+   RESPONSIVE CSS
+   Green Power Residency RWA
+   Add AFTER your existing style.css
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL RESPONSIVE FIXES
+========================================================= */
+
+html,
+body {
+    max-width: 100%;
+}
+
+body {
+    min-width: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: min(1120px, calc(100% - 40px));
+}
+
+
+/* =========================================================
+   LARGE TABLET / SMALL DESKTOP
+   1100px and below
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .container {
+        width: min(100% - 40px, 960px);
+    }
+
+    /* HEADER */
+
+    .navbar {
+        height: auto;
+        min-height: 78px;
+        padding: 14px 0;
+        gap: 20px;
+    }
+
+    .brand {
+        min-width: 0;
+    }
+
+    .brand-text h1 {
+        font-size: 16px;
+    }
+
+    nav {
+        gap: 14px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .nav-button {
+        padding: 9px 12px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        height: auto;
+        min-height: 470px;
+        padding: 80px 0;
+    }
+
+    .hero-content {
+        width: min(650px, 100%);
+    }
+
+    .hero h2 {
+        font-size: 46px;
+    }
+
+    .hero p {
+        width: 100%;
+    }
+
+
+    /* GRIDS */
+
+    .facility-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .committee-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .document-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .event-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* FOOTER */
+
+    .footer-grid {
+        grid-template-columns: 1.5fr 1fr 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   900px and below
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .container {
+        width: min(100% - 32px, 760px);
+    }
+
+
+    /* TOP BAR */
+
+    .topbar {
+        height: auto;
+        min-height: 40px;
+        padding: 8px 0;
+    }
+
+    .topbar .container {
+        gap: 10px;
+    }
+
+    .top-links {
+        gap: 15px;
+    }
+
+
+    /* HEADER */
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brand {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .nav-button {
+        margin-left: auto;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 440px;
+        padding: 70px 0;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        max-width: 650px;
+    }
+
+
+    /* STATS */
+
+    .stats {
+        margin-top: -30px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat:nth-child(2) {
+        border-right: 0;
+    }
+
+    .stat:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--border);
+    }
+
+
+    /* SECTIONS */
+
+    section {
+        padding: 65px 0;
+    }
+
+    .section-header {
+        display: block;
+    }
+
+    .section-description {
+        margin-top: 12px;
+        max-width: 100%;
+    }
+
+
+    /* ABOUT */
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+
+    /* FACILITIES */
+
+    .facility-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* COMMITTEE */
+
+    .committee-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* CONTACT */
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map-placeholder {
+        min-height: 280px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   600px and below
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: calc(100% - 28px);
+    }
+
+
+    /* =====================================================
+       TOP BAR
+    ===================================================== */
+
+    .topbar {
+        font-size: 11px;
+        padding: 8px 0;
+    }
+
+    .topbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .top-links {
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+
+    /* =====================================================
+       HEADER
+    ===================================================== */
+
+    header {
+        position: sticky;
+        top: 0;
+    }
+
+    .navbar {
+        padding: 12px 0;
+        gap: 12px;
+    }
+
+    .brand {
+        gap: 10px;
+        align-items: center;
+    }
+
+    .brand img {
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+    }
+
+    .brand-text {
+        min-width: 0;
+    }
+
+    .brand-text h1 {
+        font-size: 14px;
+        line-height: 1.25;
+    }
+
+    .brand-text p {
+        font-size: 9px;
+        letter-spacing: .7px;
+    }
+
+
+    /* =====================================================
+       NAVIGATION
+    ===================================================== */
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        gap: 7px;
+    }
+
+    nav a {
+        font-size: 11px;
+        text-align: center;
+        padding: 7px 4px;
+        border-radius: 6px;
+        background: #f5f8f6;
+    }
+
+    nav a:hover {
+        background: var(--light-green);
+    }
+
+    nav .nav-button {
+        grid-column: 1 / -1;
+        margin: 2px 0 0;
+        padding: 10px;
+        background: var(--green);
+        color: white !important;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .hero {
+        min-height: 0;
+        padding: 65px 0 85px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .eyebrow {
+        font-size: 9px;
+        padding: 6px 10px;
+        margin-bottom: 15px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+        line-height: 1.08;
+        letter-spacing: -.5px;
+        margin-bottom: 17px;
+    }
+
+    .hero p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.65;
+        margin-bottom: 23px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       BUTTONS
+    ===================================================== */
+
+    .btn {
+        padding: 11px 16px;
+        font-size: 13px;
+    }
+
+
+    /* =====================================================
+       STATS
+    ===================================================== */
+
+    .stats {
+        margin-top: -25px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 10px;
+    }
+
+    .stat {
+        padding: 17px 12px;
+        text-align: center;
+    }
+
+    .stat strong {
+        font-size: 22px;
+    }
+
+    .stat span {
+        font-size: 10px;
+    }
+
+
+    /* =====================================================
+       SECTIONS
+    ===================================================== */
+
+    section {
+        padding: 55px 0;
+    }
+
+    .section-header {
+        margin-bottom: 27px;
+    }
+
+    .section-label {
+        font-size: 10px;
+        letter-spacing: 1.2px;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+    .section-description {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+
+    /* =====================================================
+       ABOUT
+    ===================================================== */
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .about-grid > div > h3 {
+        font-size: 21px;
+    }
+
+    .about-text {
+        font-size: 13px;
+    }
+
+    .check-list {
+        margin-top: 15px;
+    }
+
+    .check-list li {
+        font-size: 13px;
+        margin: 10px 0;
+    }
+
+    .about-box {
+        padding: 23px;
+    }
+
+    .about-box h3 {
+        font-size: 20px;
+    }
+
+    .about-box p {
+        font-size: 13px;
+    }
+
+    .about-box .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       FACILITIES
+    ===================================================== */
+
+    .facility-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .facility {
+        padding: 17px 14px;
+        border-radius: 9px;
+    }
+
+    .facility-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 17px;
+        margin-bottom: 11px;
+    }
+
+    .facility h4 {
+        font-size: 13px;
+    }
+
+    .facility p {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+
+    /* =====================================================
+       COMMITTEE
+    ===================================================== */
+
+    .committee-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .member-card {
+        padding: 19px 10px;
+        border-radius: 9px;
+    }
+
+    .member-avatar {
+        width: 56px;
+        height: 56px;
+        font-size: 19px;
+        margin-bottom: 11px;
+    }
+
+    .member-card h4 {
+        font-size: 12px;
+        line-height: 1.35;
+    }
+
+    .member-card p {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+
+
+    /* =====================================================
+       COMPLAINT SECTION
+    ===================================================== */
+
+    .complaint-grid {
+        padding: 30px 0 35px;
+        gap: 22px;
+    }
+
+    .complaint-grid > div:first-child p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .complaint-help-action {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 9px;
+        margin-top: 5px;
+    }
+
+    .complaint-help-action > span {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .complaint-help-action .btn-green {
+        width: 100%;
+        min-height: 50px;
+        padding: 0 18px;
+        font-size: 14px;
+    }
+
+    .complaint-help-action small {
+        font-size: 11px;
+    }
+
+
+    /* =====================================================
+       DOCUMENTS
+    ===================================================== */
+
+    .documents {
+        padding: 55px 0;
+    }
+
+    .document-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+    .document {
+        min-height: 70px;
+        padding: 14px;
+        gap: 12px;
+        border-radius: 9px;
+    }
+
+    .document-icon {
+        flex-basis: 38px;
+        width: 38px;
+        height: 38px;
+        font-size: 10px;
+    }
+
+    .document h4 {
+        font-size: 13px;
+    }
+
+    .document p {
+        font-size: 10px;
+    }
+
+
+    /* =====================================================
+       DOCUMENT MODAL
+    ===================================================== */
+
+    .document-content.active {
+        padding: 12px;
+        overflow-y: auto;
+    }
+
+    .document-content.active > .document-modal-header,
+    .document-content.active > .document-list {
+        width: 100%;
+    }
+
+    .document-modal-header {
+        margin-top: 2vh;
+        padding: 18px 50px 18px 18px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .document-modal-header h2 {
+        font-size: 18px;
+    }
+
+    .document-close {
+        top: 12px;
+        right: 12px;
+        width: 31px;
+        height: 31px;
+        font-size: 20px;
+    }
+
+    .document-list {
+        padding: 5px 12px 12px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .document-list > a {
+        gap: 11px;
+        padding: 13px 5px;
+    }
+
+    .document-list > a h4 {
+        font-size: 12px;
+    }
+
+    .document-list > a p {
+        font-size: 10px;
+    }
+
+    .document-list .document-icon {
+        flex-basis: 36px;
+    }
+
+
+    /* =====================================================
+       EVENTS
+    ===================================================== */
+
+    .event-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .event-top {
+        height: 90px;
+        padding: 17px;
+    }
+
+    .event-month {
+        font-size: 10px;
+    }
+
+    .event-day {
+        font-size: 27px;
+    }
+
+    .event-content {
+        padding: 17px;
+    }
+
+    .event-content h4 {
+        font-size: 14px;
+    }
+
+    .event-content p {
+        font-size: 11px;
+    }
+
+
+    /* =====================================================
+       CONTACT
+    ===================================================== */
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .contact-card {
+        padding: 21px 17px;
+    }
+
+    .contact-card h3 {
+        font-size: 19px;
+        margin-bottom: 17px;
+    }
+
+    .contact-row {
+        gap: 11px;
+        margin: 15px 0;
+    }
+
+    .contact-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 13px;
+    }
+
+    .contact-row strong {
+        font-size: 11px;
+    }
+
+    .contact-row span,
+    .contact-row a {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .map-placeholder {
+        min-height: 240px;
+    }
+
+    .map-inner {
+        max-width: calc(100% - 30px);
+        padding: 18px 20px;
+    }
+
+    .map-inner strong {
+        font-size: 14px;
+    }
+
+    .map-inner span {
+        font-size: 10px;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    footer {
+        padding-top: 40px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 20px;
+        padding-bottom: 30px;
+    }
+
+    .footer-grid > div:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .footer-brand {
+        font-size: 18px;
+    }
+
+    footer h3 {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    footer p,
+    footer a {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    footer a {
+        margin: 6px 0;
+    }
+
+    .footer-bottom {
+        padding: 15px 0;
+        font-size: 9px;
+        line-height: 1.5;
+    }
+
+
+    /* =====================================================
+       TOAST
+    ===================================================== */
+
+    .toast {
+        right: 12px;
+        left: 12px;
+        bottom: 15px;
+        text-align: center;
+        font-size: 11px;
+    }
+
+
+    /* =====================================================
+       GENERAL MODAL
+    ===================================================== */
+
+    .modal-box {
+        width: calc(100% - 28px);
+        padding: 23px 18px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   400px and below
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .container {
+        width: calc(100% - 22px);
+    }
+
+
+    /* HEADER */
+
+    .brand img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brand-text h1 {
+        font-size: 12px;
+    }
+
+    .brand-text p {
+        font-size: 8px;
+    }
+
+
+    /* NAV */
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 10px;
+        padding: 6px 2px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 55px 0 75px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+
+    /* STATS */
+
+    .stat {
+        padding: 15px 8px;
+    }
+
+    .stat strong {
+        font-size: 20px;
+    }
+
+    .stat span {
+        font-size: 9px;
+    }
+
+
+    /* SECTION TITLES */
+
+    .section-title {
+        font-size: 24px;
+    }
+
+
+    /* FACILITIES */
+
+    .facility {
+        padding: 15px 11px;
+    }
+
+    .facility h4 {
+        font-size: 12px;
+    }
+
+    .facility p {
+        font-size: 9px;
+    }
+
+
+    /* COMMITTEE */
+
+    .member-card {
+        padding: 16px 7px;
+    }
+
+    .member-avatar {
+        width: 50px;
+        height: 50px;
+        font-size: 17px;
+    }
+
+    .member-card h4 {
+        font-size: 11px;
+    }
+
+    .member-card p {
+        font-size: 9px;
+    }
+
+
+    /* DOCUMENTS */
+
+    .document {
+        padding: 12px;
+    }
+
+    .document h4 {
+        font-size: 12px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid > div:first-child {
+        grid-column: auto;
+    }
+
+}
+
+
+/* =========================================================
+   LANDSCAPE MOBILE
+========================================================= */
+
+@media (max-width: 900px) and (orientation: landscape) {
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero-content {
+        max-width: 650px;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    nav {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    nav .nav-button {
+        grid-column: auto;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY / REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+
+}
