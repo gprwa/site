@@ -28,6 +28,17 @@ function documentMessage(documentId) {
 }
 
 
+function closeDocument() {
+
+    const documents = document.querySelectorAll('.document-content');
+
+    documents.forEach(function (document) {
+        document.classList.remove('active');
+    });
+
+}
+
+
 /* =========================
    MAP
 ========================= */
