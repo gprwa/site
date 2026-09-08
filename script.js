@@ -54,3 +54,5 @@ function openMap() {
 
     window.open(url, "_blank");
 }
+
+
