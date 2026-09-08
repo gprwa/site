@@ -6,78 +6,26 @@ document.getElementById("year").textContent =
     new Date().getFullYear();
 
 
-/* =========================
-   TOAST
-========================= */
-
-function showToast(message) {
-
-    const toast =
-        document.getElementById("toast");
-
-    toast.textContent = message;
-
-    toast.classList.add("show");
-
-    setTimeout(() => {
-        toast.classList.remove("show");
-    }, 3000);
-}
-
-
-/* =========================
-   COMPLAINT FORM
-========================= */
-
-document
-    .getElementById("complaintForm")
-    .addEventListener("submit", function(event) {
-
-        event.preventDefault();
-
-        const name =
-            document.getElementById("residentName").value;
-
-        showToast(
-            "Thank you, " +
-            name +
-            ". Your complaint has been recorded locally."
-        );
-
-        this.reset();
-    });
-
 
 /* =========================
    DOCUMENT MODAL
 ========================= */
+function documentMessage(documentId) {
 
-function documentMessage() {
+    // Hide all document divs
+    const documents = document.querySelectorAll('.document-content');
 
-    document
-        .getElementById("modal")
-        .classList.add("show");
-}
+    documents.forEach(function (document) {
+        document.classList.remove('active');
+    });
 
+    // Show only the clicked document
+    const selectedDocument = document.getElementById(documentId);
 
-function closeModal() {
-
-    document
-        .getElementById("modal")
-        .classList.remove("show");
-}
-
-
-window.addEventListener("click", function(event) {
-
-    const modal =
-        document.getElementById("modal");
-
-    if (event.target === modal) {
-        closeModal();
+    if (selectedDocument) {
+        selectedDocument.classList.add('active');
     }
-
-});
+}
 
 
 /* =========================
@@ -95,49 +43,3 @@ function openMap() {
 
     window.open(url, "_blank");
 }
-
-
-/* =========================
-   BACK TO TOP
-========================= */
-
-const backTop =
-    document.getElementById("backTop");
-
-
-window.addEventListener("scroll", function() {
-
-    if (window.scrollY > 500) {
-
-        backTop.classList.add("show");
-
-    } else {
-
-        backTop.classList.remove("show");
-
-    }
-
-});
-
-
-function scrollToTop() {
-
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-
-}
-
-
-/* =========================
-   ESCAPE KEY
-========================= */
-
-document.addEventListener("keydown", function(event) {
-
-    if (event.key === "Escape") {
-        closeModal();
-    }
-
-});
