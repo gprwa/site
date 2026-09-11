@@ -401,9 +401,7 @@ section {
 /* =========================
    ABOUT
 ========================= */
-.about {
-    background: var(--light);
-}
+
 
 .about-grid {
     display: grid;
@@ -482,9 +480,6 @@ section {
    COMMITTEE
 ========================= */
 
-.committee {
-    background: var(--light);
-}
 
 .committee-grid {
     display: grid;
@@ -551,8 +546,12 @@ section {
 /* =========================
    FACILITIES
 ========================= */
-
+.facilities{
+    background: var(--light);
+    
+}
 .facility-grid {
+    background: var(--light);
     display: grid;
 
     grid-template-columns: repeat(4, 1fr);
@@ -617,7 +616,9 @@ section {
 /* =========================
    EVENTS
 ========================= */
-
+.events{
+    background: var(--light);
+}
 
 .event-grid {
     display: grid;
@@ -686,6 +687,10 @@ section {
 /* =========================
    COMPLAINTS
 ========================= */
+.complaint-help{
+    background: var(--light);
+}
+
 .complaint-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -751,14 +756,9 @@ section {
 ========================= */
 
 .documents {
-    background: var(--light);
     padding: 80px 0;
 }
 
-
-/* =========================
-   DOCUMENT GRID
-========================= */
 
 .document-grid {
     display: grid;
@@ -766,11 +766,6 @@ section {
     gap: 18px;
     margin-top: 35px;
 }
-
-
-/* =========================
-   DOCUMENT CARD
-========================= */
 
 .document {
     position: relative;
@@ -813,11 +808,6 @@ section {
     transform: translateY(-1px);
 }
 
-
-/* =========================
-   DOCUMENT ICON
-========================= */
-
 .document-icon {
     flex: 0 0 42px;
 
@@ -840,10 +830,6 @@ section {
     letter-spacing: 0.3px;
 }
 
-
-/* =========================
-   DOCUMENT TEXT
-========================= */
 
 .document h4 {
     margin: 0 0 5px;
@@ -997,11 +983,6 @@ section {
     transform: rotate(90deg);
 }
 
-
-/* =========================
-   DOCUMENT LIST
-========================= */
-
 .document-list {
     background: #ffffff;
 
@@ -1011,11 +992,6 @@ section {
 
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
-
-
-/* =========================
-   DOCUMENT LIST ITEMS
-========================= */
 
 .document-list > a {
     display: flex;
@@ -1046,10 +1022,6 @@ section {
 }
 
 
-/* =========================
-   LIST ITEM TEXT
-========================= */
-
 .document-list > a h4 {
     margin: 0 0 4px;
 
@@ -1067,19 +1039,9 @@ section {
     font-size: 11px;
 }
 
-
-/* =========================
-   LIST ITEM ICON
-========================= */
-
 .document-list .document-icon {
     flex: 0 0 42px;
 }
-
-
-/* =========================
-   EMPTY CIRCULARS MESSAGE
-========================= */
 
 .document-list > p {
     margin: 0;
@@ -1097,9 +1059,7 @@ section {
 /* =========================
    CONTACT
 ========================= */
-#contact{
-    background: var(--light);
-}
+
 
 .contact-grid {
     display: grid;
