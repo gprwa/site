@@ -46,7 +46,7 @@ function Navbar() {
           <img src="/img/logo.jpeg" alt="GPRWA Logo" />
 
           <div className="brand-text">
-            <h1>Green Power Residency RWA</h1>
+            <h1>Green Power Residency</h1>
             <p>Sector 75, Faridabad</p>
           </div>
         </Link>
