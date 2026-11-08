@@ -200,8 +200,7 @@ function About() {
           </div>
 
           <p className="section-description">
-            Green Power Residency RWA (GPRWA) is the residents'
-            welfare association of Green Power Residency,
+            Green Power Residency,
             Sector 75, Faridabad, Haryana.
           </p>
 
