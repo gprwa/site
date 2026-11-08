@@ -3,6 +3,8 @@ import { useState } from "react";
 import "./style.css";
 import "./responsive.css";
 
+import logo from "../img/logo.png";
+
 import {
   BrowserRouter,
   Routes,
@@ -43,7 +45,7 @@ function Navbar() {
       <div className="container navbar">
 
         <Link to="/" className="brand">
-          <img src="/img/logo.jpeg" alt="GPRWA Logo" />
+          <img src={logo} alt="GPRWA Logo" />
 
           <div className="brand-text">
             <h1>Green Power Residency RWA</h1>
