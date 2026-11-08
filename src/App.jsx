@@ -43,7 +43,7 @@ function Navbar() {
       <div className="container navbar">
 
         <Link to="/" className="brand">
-          <img src="/logo.png" alt="GPRWA Logo" />
+          <img src="/logo.jpeg" alt="GPRWA Logo" />
 
           <div className="brand-text">
             <h1>Green Power Residency RWA</h1>
